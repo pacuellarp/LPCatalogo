@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define a custom class for the Lobster font */
+.font-lobster {
+  font-family: 'Lobster', cursive;
+}
+
+/* Estilo general para la fuente Inter */
+body {
+  font-family: Inter var,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-size: 100% 100%;
+  }
+  
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    background-size: 300% 150%;
+  }
+  
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-size: 100% 100%;
+  }
+}
+
+.mainBackground {
+  background: linear-gradient(45deg, #2B7780 0%, #8FCED4 100%);
+}
+
+.shape {
+  background: linear-gradient(45deg, #11AEBF 0%, #1177BF 100%);
+  animation: morph 8s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  box-shadow: 0 0 20px #000;
+}
+
+.shape2 {
+  background: linear-gradient(45deg, #C88BBE 0%, #F280DF 100%);
+  animation: morph 8s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  box-shadow: 0 0 20px #000;
+}
+
+.shape3 {
+  background: linear-gradient(45deg, #EAE167 0%, #F2E96B 100%);
+  animation: morph 8s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  box-shadow: 0 0 20px #000;
+}
+
+.animation-up {
+  animation: slide-up 0.3s ease;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animation-down {
+  animation: slide-down 0.31s ease;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+
+
+.animation-up-2 {
+  animation: slide-up-2 0.3s ease;
+}
+
+@keyframes slide-up-2 {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.animation-down-2 {
+  animation: slide-down-2 0.31s ease;
+}
+
+@keyframes slide-down-2 {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+}
