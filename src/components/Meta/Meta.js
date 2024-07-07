@@ -9,7 +9,7 @@ export default function Meta({ pageName }) {
 
       <meta
         name="description"
-        content="Is your favorite Rick and Morty character dead or alive? Let's find it out!"
+        content="Catálogo de ropa. Chaquetas, rompevientos, chalecos, tapabocas, y mucho más."
       />
       <link rel="icon" href="/favicon.png" />
 
